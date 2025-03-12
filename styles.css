@@ -134,9 +134,10 @@ footer {
 }
 
 .profile-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 150px; /*Adjust the size as needed*/
+    height: 150px; /*Adjust the size as needed*/
+    object-fit: cover;
 }
 
 .profile-card:hover {
