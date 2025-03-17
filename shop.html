@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Cosmetic Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="profiles.html">Profiles</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <a href="cart.html">
+                        <img src="cart-icon.png" alt="Cart" style="width: 24px; height: 24px;">
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="foundation.jpg" alt="Foundation" />
+            <h3>Foundation</h3>
+            <p>KSh 1,500</p>
+            <div class="quantity-selector">
+                <label for="quantity-foundation">Quantity:</label>
+                <input type="number" id="quantity-foundation" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('foundation', 'Foundation', 1500, 'quantity-foundation')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="lipstick.jpg" alt="Lipstick" />
+            <h3>Lipstick</h3>
+            <p>KSh 800</p>
+            <div class="quantity-selector">
+                <label for="quantity-lipstick">Quantity:</label>
+                <input type="number" id="quantity-lipstick" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('lipstick', 'Lipstick', 800, 'quantity-lipstick')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="eyeshadow.jpg" alt="Eye Shadow Palette" />
+            <h3>Eye Shadow Palette</h3>
+            <p>KSh 2,000</p>
+            <div class="quantity-selector">
+                <label for="quantity-eyeshadow">Quantity:</label>
+                <input type="number" id="quantity-eyeshadow" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('eyeshadow', 'Eye Shadow Palette', 2000, 'quantity-eyeshadow')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="blush.jpg" alt="Blush" />
+            <h3>Blush</h3>
+            <p>KSh 1,200</p>
+            <div class="quantity-selector">
+                <label for="quantity-blush">Quantity:</label>
+                <input type="number" id="quantity-blush" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('blush', 'Blush', 1200, 'quantity-blush')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="mascara.jpg" alt="Mascaras" />
+            <h3>Mascaras</h3>
+            <p>KSh 1,000</p>
+            <div class="quantity-selector">
+                <label for="quantity-mascara">Quantity:</label>
+                <input type="number" id="quantity-mascara" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('mascara', 'Mascaras', 1000, 'quantity-mascara')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="facecream.jpg" alt="Face Cream" />
+            <h3>Face Cream</h3>
+            <p>KSh 1,800</p>
+            <div class="quantity-selector">
+                <label for="quantity-facecream">Quantity:</label>
+                <input type="number" id="quantity-facecream" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('facecream', 'Face Cream', 1800, 'quantity-facecream')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="perfume.jpg" alt="Perfume" />
+            <h3>Perfume</h3>
+            <p>KSh 3,500</p>
+            <div class="quantity-selector">
+                <label for="quantity-perfume">Quantity:</label>
+                <input type="number" id="quantity-perfume" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('perfume', 'Perfume', 3500, 'quantity-perfume')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="nailpolish.jpg" alt="Nail Polish" />
+            <h3>Nail Polish</h3>
+            <p>KSh 600</p>
+            <div class="quantity-selector">
+                <label for="quantity-nailpolish">Quantity:</label>
+                <input type="number" id="quantity-nailpolish" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('nailpolish', 'Nail Polish', 600, 'quantity-nailpolish')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="makeupbrushes.jpg" alt="Makeup Brushes Set" />
+            <h3>Makeup Brushes Set</h3>
+            <p>KSh 2,500</p>
+            <div class="quantity-selector">
+                <label for="quantity-makeupbrushes">Quantity:</label>
+                <input type="number" id="quantity-makeupbrushes" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('makeupbrushes', 'Makeup Brushes Set', 2500, 'quantity-makeupbrushes')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="facemask.jpg" alt="Face Mask" />
+            <h3>Face Mask</h3>
+            <p>KSh 700</p>
+            <div class="quantity-selector">
+                <label for="quantity-facemask">Quantity:</label>
+                <input type="number" id="quantity-facemask" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart('facemask', 'Face Mask', 700, 'quantity-facemask')">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Benta B Beauty. All rights reserved.</p>
+    </footer>
+
+    <script>
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartCount = document.getElementById('cart-count');
+        cartCount.textContent = cart.length;
+    }
+
+    function addToCart(productId, name, price, quantityId) {
+        const quantityInput = document.getElementById(quantityId);
+        const quantity = parseInt(quantityInput.value);
+        
+        if (quantity < 1) {
+            alert('Please select a valid quantity');
+            return;
+        }
+
+        // Get existing cart or initialize empty array
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Add new item with quantity
+        cart.push({
+            id: productId,
+            name: name,
+            price: parseInt(price),
+            quantity: quantity
+        });
+        
+        // Save back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        // Update the cart count
+        updateCartCount();
+        
+        // Reset quantity input
+        quantityInput.value = 1;
+        
+        alert(`${quantity} ${name}(s) added to your cart!`);
+    }
+
+    // Initialize cart count when page loads
+    window.onload = function() {
+        updateCartCount();
+    };
+    </script>
+</body>
+</html>
